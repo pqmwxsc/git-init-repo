@@ -24,12 +24,12 @@ body {
 .facebook_logo {
     position: absolute;
     top: 156px;
-    left: 807px;
+    left: 955px;
 }
 .linkedin_logo {
     position:absolute;
     top: 157px;
-    left: 1107px;
+    left: 1255px;
 }
 .split_image {
     width: 55%;
@@ -92,13 +92,13 @@ body {
 .Email {
     position:absolute;
     top: 290px;
-    left: 803px;
+    left: 950px;
     color:#777e84
 }
 .Phone {
     position:absolute;
     top: 290px;
-    left: 1106px;
+    left: 1256px;
     color:#777e84
 }
 .Information_one {
