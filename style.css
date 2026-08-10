@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Barlow';
-    src: url(https://www.fontsquirrel.com/fonts/barlow);
+    src: url('./Barlow-Regular.ttf');
     font-size: normal;
     font-weight: normal;
 }
@@ -22,14 +22,15 @@ body {
     left: 30px;
 }
 .facebook_logo {
-    position: absolute;
-    top: 156px;
-    left: 955px;
+    width: 23px;
+    vertical-align: middle;
+    margin-bottom: 3px;
 }
 .linkedin_logo {
-    position:absolute;
-    top: 157px;
-    left: 1255px;
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    vertical-align: middle;
 }
 .split_image {
     width: 55%;
@@ -71,7 +72,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 30px;
-    font-size: 18px;
+    font-size: 17px;
     color: #FFFFFF;
 }
 .Register.two{
@@ -80,7 +81,7 @@ body {
     padding-left: 48px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 17px;
     color: #FFFFFF;
 }
 .or {
@@ -89,18 +90,22 @@ body {
     text-align: center;
     color: #AFAFAF;
 }
-.Email {
-    position:absolute;
-    top: 290px;
-    left: 950px;
-    color:#777e84
+
+.input_box {
+    display: inline-block;
+    position: relative;
 }
+
+.Email,
 .Phone {
-    position:absolute;
-    top: 290px;
-    left: 1256px;
-    color:#777e84
+    position: absolute;
+    left: 15px;
+    top: 2px;
+    color: #777e84;
+    font-size: 15px;
+    z-index: 1;
 }
+
 .Information_one {
     height: 55px;
     width: 268px;
@@ -114,6 +119,10 @@ body {
     height: 55px;
     width: 268px;
     border-radius: 5px;
+}
+.Information_one:focus + .Email,
+.Information_two:focus + .Phone {
+    display: none;
 }
 .three {
     height: 35px;

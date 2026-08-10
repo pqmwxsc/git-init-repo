@@ -15,13 +15,6 @@
         <div class="logo">
             <img src="./logo.svg" alt="logo" width="120px">
         </div>
-        <div class="facebook_logo">
-            <img src="./facebook.svg" alt="facebook" width="23px">
-        </div>
-        <div class="linkedin_logo">
-            <img src="./linkedin.svg" alt="linkedin" width="20px">
-        </div>
-
 
         <div class="split.text">
             <div class="empty"></div>
@@ -29,21 +22,26 @@
             <div class="one"></div>
             <div class="und_title">There is no charge or obligation upon registration.</div>
             <div class="two"></div>
-            <span class="Register one">Register with Facebook</span>
-            <span class="Register two">Register with Linkedln</span>
+
+            <span class="Register one">
+                <img class= 'facebook_logo' src="./facebook.svg" alt="facebook">
+                Register with Facebook
+            </span>
+            <span class="Register two">
+                <img class="linkedin_logo" src="./linkedin.svg" alt="linkedin">
+                Register with Linkedln
+            </span>
             <br>
             <div class="or">───────    OR    ───────</div>
 
-            <span>
-                <p class="Email">Email</p>
-                <input class="Information_one" type="email" id="email" name="p"
-                placeholder=" "required>
-            </span>
+            <span class="input_box"> 
+                <input class="Information_one" type="email" id="email" name="email" required >
+                <label class="Email" for="email">Email</label>
+             </span>
             
-            <span>
-                <p class="Phone">Phone</p>
-                <input class="Information_two" type="tel" id="phone number" name="q"
-                placeholder=" "required>
+            <span class="input_box"> 
+                <input class="Information_two" type="tel" id="phone" name="phone" inputmode="numeric" required > 
+                <label class="Phone" for="phone">Phone</label> 
             </span>
             <br>
             <br>
@@ -98,5 +96,6 @@
         </div>
     
     </div>
+    <script src="./scipt.js"></script>
 </body>
 </html>
